@@ -1,0 +1,653 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'SUIT', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #f3f7ff;
+}
+
+/*top*/
+#top {
+    background-color: rgba(206, 152, 65, 0.7);
+}
+
+.top_inner {
+    margin: 0 auto;
+    width: 1320px;
+    display: flex;
+    justify-content: right;
+    font-size: 15px;
+}
+
+.top_inner ul {
+    display: flex;
+}
+
+.top_inner ul li {
+    padding: 5px 0;
+}
+
+.top_inner ul li:nth-child(1) {
+    padding-right: 10px;
+}
+
+.top_inner ul li:nth-child(3) {
+    padding-left: 10px;
+}
+
+/*header*/
+#header {
+    background-color: #202e48;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gnb>ul {
+    display: flex;
+}
+
+#gnb>ul>li {
+    font-size: 18px;
+    position: relative;
+    padding: 40px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.sub {
+    width: 160px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-left: -80px;
+}
+
+.sub>li>a {
+    display: block;
+    border-bottom: 1px solid rgba(90, 69, 35, 0.5);
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub {
+    display: none;
+}
+
+.sub li {
+    background-color: rgba(206, 153, 66, 0.8)
+}
+
+#gnb li:hover .sub {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all 0.5s;
+}
+
+.sub li:last-child {
+    background: rgba(206, 153, 66, 0.8) url(../images/sub_icon.png) no-repeat center;
+}
+
+/*store*/
+.store_banner {
+    width: 100%;
+    height: 426px;
+    display: flex;
+    justify-content: center;
+}
+
+.sb_next,
+.sb_prev {
+    color: #f3f7ff;
+}
+
+.store_banner .sb_pag {
+    bottom: 0;
+    top: auto;
+}
+
+.store_banner .sb_pag span {
+    background-color: #f3f7ff;
+}
+
+/*best*/
+.best {
+    background-color: #202e48;
+    width: 100%;
+    height: 730px;
+    position: relative;
+}
+
+.best_inner {
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 100px;
+}
+
+.best_inner h1 {
+    color: #190a06;
+    line-height: 30px;
+    padding-top: 12.5px;
+}
+
+.best_tittle {
+    background-color: rgb(255, 255, 255);
+    border-radius: 120px;
+    height: 60px;
+    width: 360px;
+    text-align: center;
+}
+
+.best_tittle img {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.best_itemin {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.best_item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    position: relative;
+}
+
+.best_more {
+    background: url(../images/best_more2.png) no-repeat;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+}
+
+.navy_circle1,
+.navy_circle2,
+.navy_circle3,
+.navy_circle4 {
+    background-color: rgba(206, 152, 65, 0.7);
+    border-radius: 50%;
+    height: 357px;
+    width: 254px;
+    line-height: 25px;
+    position: absolute;
+    opacity: 0;
+}
+
+.best_text {
+    font-size: 20px;
+    padding-top: 60%;
+}
+
+.navy_circle1:hover,
+.navy_circle2:hover,
+.navy_circle3:hover,
+.navy_circle4:hover {
+    opacity: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.best_more:hover {
+    background: url(../images/best_more.png) no-repeat;
+    transition: all 0.5s;
+    width: 90px;
+    height: 90px;
+}
+
+/*product1_단품구매부분*/
+.product1 {
+    background-color: #e0ece1;
+    width: 100%;
+    height: 1600px;
+    color: #190a06;
+}
+
+.pd_text {
+    padding-top: 15px;
+}
+
+.product_inner1 {
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 100px;
+}
+
+.product_inner1 h1 {
+    line-height: 32.5px;
+    font-size: 28px;
+    padding-top: 15px;
+    padding-bottom: 110px;
+}
+
+.taste {
+    background-color: rgb(255, 255, 255);
+    border-radius: 120px;
+    height: 60px;
+    width: 360px;
+    text-align: center;
+}
+
+.taste img {
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.taste_inner {
+    margin: 0 auto;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.taste_single {
+    position: relative;
+}
+
+.red_box1,
+.red_box2,
+.red_box3,
+.red_box4,
+.red_box5,
+.red_box6 {
+    background-color: rgba(177, 37, 36, 0.7);
+    border-radius: 100px;
+    height: 423px;
+    width: 332px;
+    line-height: 25px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+
+.red_box1:hover,
+.red_box2:hover,
+.red_box3:hover,
+.red_box4:hover,
+.red_box5:hover,
+.red_box6:hover {
+    opacity: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.taste_item p:last-child {
+    padding-bottom: 100px;
+}
+
+.red_text {
+    font-size: 22px;
+    padding-top: 60%;
+    font-weight: bold;
+    color: #f3f7ff;
+}
+
+.taste_item h3 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: rgba(25, 10, 6, 0.7) 1px solid;
+}
+
+/*단품구매 HOT,BEST 스티커 붙은거*/
+.taste_single a {
+    position: relative;
+}
+
+.taste_hot {
+    width: 76px;
+    height: 66px;
+    z-index: 88;
+    position: absolute;
+}
+
+.taste_single a {
+    position: relative;
+}
+
+.taste_best {
+    width: 76px;
+    height: 66px;
+    z-index: 88;
+    position: absolute;
+}
+
+/*product2_안주부분*/
+.product2 {
+    background-color: #e0ece1;
+    width: 100%;
+    height: 2300px;
+    color: #190a06;
+}
+
+.pd_text {
+    padding-top: 15px;
+}
+
+.product_inner2 {
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 110px;
+}
+
+.food {
+    background-color: rgb(255, 255, 255);
+    border-radius: 120px;
+    height: 60px;
+    width: 360px;
+    text-align: center;
+}
+
+.product_inner2 h1 {
+    line-height: 32.5px;
+    font-size: 28px;
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+
+.food {
+    background-color: rgb(255, 255, 255);
+    border-radius: 120px;
+    height: 60px;
+    width: 420px;
+    text-align: center;
+}
+
+.food img {
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.food_inner {
+    margin: 0 auto;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.food_kit {
+    position: relative;
+}
+
+.navy_box1,
+.navy_box2,
+.navy_box3,
+.navy_box4,
+.navy_box5,
+.navy_box6,
+.navy_box7,
+.navy_box8,
+.navy_box9 {
+    background-color: rgba(39, 50, 113, 0.7);
+    border-radius: 100px;
+    height: 423px;
+    width: 332px;
+    line-height: 25px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+
+.navy_box1:hover,
+.navy_box2:hover,
+.navy_box3:hover,
+.navy_box4:hover,
+.navy_box5:hover,
+.navy_box6:hover,
+.navy_box7:hover,
+.navy_box8:hover,
+.navy_box9:hover {
+    opacity: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.food_item p:last-child {
+    padding-bottom: 100px;
+}
+
+.navy_text {
+    font-size: 22px;
+    padding-top: 60%;
+    font-weight: bold;
+    color: #f3f7ff;
+}
+
+.food_item h3 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: rgba(25, 10, 6, 0.7) 1px solid;
+}
+
+/*단품구매 HOT,BEST 스티커 붙은거*/
+.food_kit a {
+    position: relative;
+}
+
+.food_hot {
+    width: 76px;
+    height: 66px;
+    z-index: 88;
+    position: absolute;
+}
+
+.food_kit a {
+    position: relative;
+}
+
+.food_best {
+    width: 76px;
+    height: 66px;
+    z-index: 88;
+    position: absolute;
+}
+
+/*product3_굿즈부분*/
+.product3 {
+    background-color: #e0ece1;
+    width: 100%;
+    height: 950px;
+    color: #190a06;
+}
+
+.pd_text {
+    padding-top: 15px;
+}
+
+.product_inner3 {
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 100px;
+}
+
+.goods {
+    background-color: rgb(255, 255, 255);
+    border-radius: 120px;
+    height: 60px;
+    width: 360px;
+    text-align: center;
+}
+
+.product_inner3 h1 {
+    line-height: 32.5px;
+    font-size: 28px;
+    padding-top: 15px;
+    padding-bottom: 110px;
+}
+
+.goods {
+    background-color: rgb(255, 255, 255);
+    border-radius: 120px;
+    height: 60px;
+    width: 380px;
+    text-align: center;
+}
+
+.goods img {
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.goods_inner {
+    margin: 0 auto;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.made_goods {
+    position: relative;
+}
+
+.green_box1,
+.green_box2,
+.green_box3 {
+    background-color: rgba(33, 62, 29, 0.7);
+    border-radius: 100px;
+    height: 423px;
+    width: 332px;
+    line-height: 25px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+
+.green_box1:hover,
+.green_box2:hover,
+.green_box3:hover {
+    opacity: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.goods_item p:last-child {
+    padding-bottom: 100px;
+}
+
+.green_text {
+    font-size: 22px;
+    padding-top: 60%;
+    font-weight: bold;
+    color: #f3f7ff;
+}
+
+.goods_item h3 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: rgba(25, 10, 6, 0.7) 1px solid;
+}
+
+/*단품구매 HOT,BEST 스티커 붙은거*/
+.made_goods a {
+    position: relative;
+}
+
+.goods_hot {
+    width: 76px;
+    height: 66px;
+    z-index: 88;
+    position: absolute;
+}
+
+/*footer*/
+#footer {
+    background: #e0ece1 url(../images/footer_bg.png) no-repeat;
+    width: 100%;
+    height: 527px;
+    font-size: 14px;
+}
+
+.footer_inner {
+    margin: 0 auto;
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.footer_inner ul li {
+    padding: 10px 0;
+}
+
+.footer_logo {
+    padding-bottom: 60px;
+}
+
+.basic_content ul li {
+    padding-right: 50px;
+}
+
+.logo_box {
+    display: flex;
+}
+
+.logo_box p {
+    padding-left: 30px;
+    font-size: 25px;
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    padding: 20px;
+}
+
+.basic1,
+.basic2 {
+    display: flex;
+}
+
+.quick,
+.call_center {
+    padding-top: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.big {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 12px;
+}
