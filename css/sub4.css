@@ -79,7 +79,6 @@ body {
     position: relative;
     padding: 40px;
     z-index: 10;
-    cursor: pointer;
 }
 
 .sub {
